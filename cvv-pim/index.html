@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>CVV — Protótipo acadêmico de redesign</title>
+  <meta name="description" content="Protótipo acadêmico independente de redesign do site do CVV. Apoio emocional gratuito pelo 188.">
+  <!-- Fontes: se não carregarem (sem internet), o navegador usa as fontes de reserva definidas no CSS -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Newsreader:opsz,wght@6..72,500;6..72,600&family=Public+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <a class="pular" href="#conteudo">Pular para o conteúdo</a>
+
+  <header class="cabecalho" id="topo">
+    <div class="container cabecalho__linha">
+      <a class="marca" href="#topo" aria-label="Protótipo CVV — início">
+        <!-- Marca provisória em texto: não usamos o logotipo oficial -->
+        <span class="marca__sigla">CVV</span>
+        <span class="marca__nome">Centro de Valorização da Vida<small>protótipo acadêmico</small></span>
+      </a>
+
+      <button class="menu-botao" id="menuBotao" aria-expanded="false" aria-controls="menuPrincipal">
+        <span class="menu-botao__texto">Menu</span>
+      </button>
+
+      <nav class="menu" id="menuPrincipal" aria-label="Principal">
+        <a href="#acolhimento">Acolhimento</a>
+        <a href="#atendimento">Atendimento</a>
+        <a href="#sobre">Sobre</a>
+        <a href="#voluntariado">Voluntariado</a>
+        <a href="#campinas">Campinas</a>
+        <a href="#faq">Perguntas</a>
+        <a class="botao botao--destaque" href="https://cvv.org.br/chat/" target="_blank" rel="noopener noreferrer">Preciso conversar</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="conteudo">
+    <!-- HERO -->
+    <section class="hero">
+      <div class="container hero__grade">
+        <div class="hero__texto">
+          <h1>Você não precisa passar por isso sozinho.</h1>
+          <p class="hero__sub">O CVV oferece apoio emocional e prevenção do suicídio, de forma gratuita e sigilosa, por voluntários que escutam sem julgar.</p>
+          <div class="botoes">
+            <a class="botao botao--primario" href="https://cvv.org.br/chat/" target="_blank" rel="noopener noreferrer">Preciso conversar</a>
+            <a class="botao botao--contorno" href="#sobre">Conheça o CVV</a>
+          </div>
+          <p class="hero__aviso">Ligação gratuita para o <a href="tel:188"><strong>188</strong></a>, 24 horas por dia, em todo o Brasil. Em risco imediato, ligue também para o SAMU (192).</p>
+        </div>
+        <!-- Ilustração original: dois círculos que se encontram, representando uma conversa -->
+        <svg class="hero__arte" viewBox="0 0 420 360" role="img" aria-label="Ilustração abstrata de dois círculos que se encontram, simbolizando uma conversa">
+          <circle cx="160" cy="180" r="120" fill="#075A9C" opacity=".92"/>
+          <circle cx="262" cy="180" r="120" fill="#4FB3A9" opacity=".75"/>
+          <path d="M210 92a120 120 0 0 1 0 176 120 120 0 0 1 0-176z" fill="#EAF4FB"/>
+        </svg>
+      </div>
+    </section>
+
+    <!-- ACOLHIMENTO -->
+    <section class="secao secao--suave" id="acolhimento">
+      <div class="container estreito">
+        <h2>Qualquer pessoa pode precisar conversar</h2>
+        <p>Dias difíceis acontecem com todo mundo. Procurar escuta não é sinal de fraqueza: é uma forma de cuidar de si.</p>
+        <p>Do outro lado, você encontra alguém que ouve com atenção, sem críticas e sem comparações.</p>
+      </div>
+    </section>
+
+    <!-- ATENDIMENTO -->
+    <section class="secao" id="atendimento">
+      <div class="container">
+        <h2>Como buscar atendimento</h2>
+        <p class="secao__intro">Segundo o site oficial, o atendimento é feito por estes canais. Cada botão leva à página oficial do CVV.</p>
+        <ol class="canais">
+          <li class="canal canal--188">
+            <h3>Telefone 188</h3>
+            <p>Gratuito, 24 horas por dia, em todo o Brasil.</p>
+            <a class="botao botao--primario" href="tel:188">Ligar para o 188</a>
+          </li>
+          <li class="canal">
+            <h3>Chat</h3>
+            <p>Converse com um voluntário pela internet.</p>
+            <a class="botao botao--contorno" href="https://cvv.org.br/chat/" target="_blank" rel="noopener noreferrer">Abrir o chat oficial</a>
+          </li>
+          <li class="canal">
+            <h3>E-mail</h3>
+            <p>Escreva e receba resposta de um voluntário.</p>
+            <a class="botao botao--contorno" href="https://cvv.org.br/e-mail/" target="_blank" rel="noopener noreferrer">Ir ao e-mail oficial</a>
+          </li>
+          <li class="canal">
+            <h3>Pessoalmente</h3>
+            <p>Disponível em alguns postos. Confira endereços no site oficial.</p>
+            <a class="botao botao--contorno" href="https://cvv.org.br/" target="_blank" rel="noopener noreferrer">Ver postos no site oficial</a>
+          </li>
+        </ol>
+        <p class="nota">Este protótipo não tem chat nem formulário próprio: nenhuma mensagem é enviada a partir daqui.</p>
+      </div>
+    </section>
+
+    <!-- SOBRE -->
+    <section class="secao secao--azul" id="sobre">
+      <div class="container duas-colunas">
+        <div>
+          <h2>Sobre o CVV</h2>
+          <p>O CVV é formado exclusivamente por voluntários e oferece apoio emocional e prevenção do suicídio de forma gratuita. Foi fundado em 1962 e atua em todo o país.</p>
+        </div>
+        <div>
+          <p>Quem procura o CVV costuma se sentir solitário ou precisar conversar com sigilo, sem julgamentos. A escuta atenta é a base do trabalho.</p>
+          <a class="botao botao--claro" href="https://cvv.org.br/o-cvv/" target="_blank" rel="noopener noreferrer">Conhecer o site oficial</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- VOLUNTARIADO -->
+    <section class="secao" id="voluntariado">
+      <div class="container duas-colunas">
+        <div>
+          <h2>Escutar também transforma quem escuta</h2>
+          <p>Todo o atendimento do CVV é feito por voluntários. Se você quer contribuir com a sociedade por meio da escuta, veja no site oficial como funciona.</p>
+        </div>
+        <div class="cartao">
+          <h3>Como me tornar voluntário</h3>
+          <p>Requisitos e etapas do processo estão na página oficial. Este protótipo não os reproduz para evitar informação desatualizada.</p>
+          <a class="botao botao--primario" href="https://cvv.org.br/seja-voluntario/" target="_blank" rel="noopener noreferrer">Ver requisitos oficiais</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- CAMPINAS -->
+    <section class="secao secao--suave" id="campinas">
+      <div class="container duas-colunas">
+        <div>
+          <h2>Presença e voluntariado em Campinas</h2>
+          <p>Campinas (SP) é a localidade de interesse deste projeto. Ampliar a visibilidade do apoio emocional na região ajuda mais pessoas a saberem que podem pedir escuta.</p>
+          <p>O mapa ao lado mostra o endereço <strong>Av. Prefeito Faria Lima, 339, Campinas (SP)</strong>, localizado no Google Maps. <strong>Confirme no site oficial do CVV se há atendimento presencial nesse local e quais são os horários</strong> antes de ir até lá.</p>
+          <a class="botao botao--primario" href="https://cvv.org.br/" target="_blank" rel="noopener noreferrer">Consultar postos no site oficial</a>
+        </div>
+        <div class="mapa">
+  <iframe
+    title="Mapa do endereço Av. Prefeito Faria Lima, 339, Campinas, SP"
+    src="https://www.google.com/maps?q=Av.+Prefeito+Faria+Lima,+339,+Campinas,+SP&output=embed"
+    loading="lazy"
+    referrerpolicy="no-referrer-when-downgrade"
+    allowfullscreen></iframe>
+  <a class="botao botao--contorno"
+     href="https://www.google.com/maps/search/?api=1&query=Av.+Prefeito+Faria+Lima,+339,+Campinas,+SP"
+     target="_blank" rel="noopener noreferrer">Abrir no Google Maps</a>
+</div>
+      </div>
+    </section>
+
+    <!-- FAQ -->
+    <section class="secao" id="faq">
+      <div class="container estreito">
+        <h2>Perguntas frequentes</h2>
+        <div class="faq" id="faqLista">
+          <div class="faq__item">
+            <h3><button class="faq__pergunta" aria-expanded="false" aria-controls="r1" id="p1">O atendimento é gratuito?</button></h3>
+            <div class="faq__resposta" id="r1" role="region" aria-labelledby="p1" hidden><p>Sim. O site oficial informa apoio emocional gratuito, e a ligação para o 188 não tem custo.</p></div>
+          </div>
+          <div class="faq__item">
+            <h3><button class="faq__pergunta" aria-expanded="false" aria-controls="r2" id="p2">Como funciona a conversa?</button></h3>
+            <div class="faq__resposta" id="r2" role="region" aria-labelledby="p2" hidden><p>Um voluntário escuta você de forma sigilosa, sem julgamentos, críticas ou comparações. Você escolhe o canal: telefone, chat, e-mail ou, em alguns postos, pessoalmente.</p></div>
+          </div>
+          <div class="faq__item">
+            <h3><button class="faq__pergunta" aria-expanded="false" aria-controls="r3" id="p3">Preciso me identificar?</button></h3>
+            <div class="faq__resposta" id="r3" role="region" aria-labelledby="p3" hidden><p>O site oficial destaca o sigilo do atendimento. Para saber quais dados cada canal pede, consulte a página oficial do canal escolhido.</p></div>
+          </div>
+          <div class="faq__item">
+            <h3><button class="faq__pergunta" aria-expanded="false" aria-controls="r4" id="p4">Como posso ser voluntário?</button></h3>
+            <div class="faq__resposta" id="r4" role="region" aria-labelledby="p4" hidden><p>Veja requisitos e etapas na <a href="https://cvv.org.br/seja-voluntario/" target="_blank" rel="noopener noreferrer">página oficial de voluntariado</a>.</p></div>
+          </div>
+          <div class="faq__item">
+            <h3><button class="faq__pergunta" aria-expanded="false" aria-controls="r5" id="p5">O CVV substitui o acompanhamento psicológico?</button></h3>
+            <div class="faq__resposta" id="r5" role="region" aria-labelledby="p5" hidden><p>Não. O CVV oferece apoio emocional por voluntários, que é diferente de atendimento médico ou psicológico. Se precisar de tratamento, procure um profissional de saúde.</p></div>
+          </div>
+          <div class="faq__item">
+            <h3><button class="faq__pergunta" aria-expanded="false" aria-controls="r6" id="p6">Como encontro os canais oficiais?</button></h3>
+            <div class="faq__resposta" id="r6" role="region" aria-labelledby="p6" hidden><p>Pelo 188 ou pelo site <a href="https://cvv.org.br/" target="_blank" rel="noopener noreferrer">cvv.org.br</a>, que lista chat, e-mail e postos.</p></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CHAMADA FINAL -->
+    <section class="secao secao--azul chamada">
+      <div class="container estreito">
+        <h2>Quando quiser, alguém está pronto para ouvir</h2>
+        <div class="botoes botoes--centro">
+          <a class="botao botao--claro" href="https://cvv.org.br/chat/" target="_blank" rel="noopener noreferrer">Ir ao canal oficial</a>
+          <a class="botao botao--contorno-claro" href="https://cvv.org.br/o-cvv/" target="_blank" rel="noopener noreferrer">Conhecer o CVV</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="rodape">
+    <div class="container">
+      <p><strong>Protótipo acadêmico independente</strong> de redesign, feito para a disciplina de ADS. Não é o site oficial do CVV, não foi autorizado nem publicado pela organização.</p>
+      <p>Canais oficiais: telefone 188 · <a href="https://cvv.org.br/" target="_blank" rel="noopener noreferrer">cvv.org.br</a> · <a href="https://cvv.org.br/politica-de-privacidade/" target="_blank" rel="noopener noreferrer">Política de privacidade do CVV</a></p>
+      <p>Créditos: fontes Newsreader e Public Sans (Google Fonts, licença OFL). Ilustração e ícones originais do projeto.</p>
+    </div>
+  </footer>
+
+  <script src="js/script.js"></script>
+</body>
+</html>
